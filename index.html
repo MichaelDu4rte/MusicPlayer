@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="pt-br"> 
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ClubMusic</title>
+
+  <!-- Links -->
+  <link rel="stylesheet" href="styles.css">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+  <script src="https://kit.fontawesome.com/59967ea12a.js" crossorigin="anonymous"></script>
+
+  <script defer src="main.js"></script>
+</head>
+<body>
+  <header id="header">
+    <div class="menu-slide"> <!-- Start Menu Slide-->
+      <h1>Club<span id="logo">Music</span></h1>
+      <div class="menu-slide-links"> <!-- Start Menu Slide Links -->
+        <ul>
+          <li><a href="" class="active"><i class="fa-solid fa-rocket"></i>Descubra</a></li>
+          <li><a href=""><i class="fa-solid fa-music"></i>Músicas</a></li>
+          <li><a href=""><i class="fa-solid fa-compact-disc"></i>Albuns</a></li>
+          <li><a href=""><i class="fa-solid fa-user"></i>Artistas</a></li>
+        </ul>
+      </div> <!-- End Menu Slide Links -->
+
+      <div class="menu-song"> <!-- Start Menu Song -->
+        <h2>Suas músicas favoritas</h2>
+        <li class="song-item">
+          <span>01</span>
+          <img src="images/1.jpg" alt="">
+          <h4>
+            I Love You
+            <div class="subtitle">Billie Eilish</div>
+            <i class="playlist-play fa-solid fa-play" id="1"></i>
+          </h4>
+        </li>
+        <li class="song-item">
+          <span>02</span>
+          <img src="images/2.jpg" alt="">
+          <h4>
+            I Wanna Be Yours 
+            <div class="subtitle">Arctic Monkeys</div>
+            <i class="playlist-play fa-solid fa-play" id="2"></i>
+          </h4>
+        </li>
+        <li class="song-item">
+          <span>03</span>
+          <img src="images/3.jpg" alt="">
+          <h4>
+            Believer 
+            <div class="subtitle">Imagine Dragons</div>
+            <i class="playlist-play fa-solid fa-play" id="3"></i>
+          </h4>
+        </li>
+        <li class="song-item">
+          <span>04</span>
+          <img src="images/4.jpg" alt="">
+          <h4>
+            Slow Dancing In The Dark
+            <div class="subtitle">Joji</div>
+            <i class="playlist-play fa-solid fa-play" id="4"></i>
+          </h4>
+        </li>
+        <li class="song-item">
+          <span>05</span>
+          <img src="images/5.jpg" alt="">
+          <h4>
+            Good 4 u
+            <div class="subtitle">Olivia Rodrigo</div>
+            <i class="playlist-play fa-solid fa-play" id="5"></i>
+          </h4>
+        </li>
+        <li class="song-item">
+          <span>06</span>
+          <img src="images/6.jpg" alt="">
+          <h4 id="6">
+            Bohemian Rhapsody
+            <div class="subtitle">Queen</div>
+            <i class="playlist-play fa-solid fa-play" id="6"></i>
+          </h4>
+        </li>
+      </div> <!-- End Menu Song -->
+
+    </div> <!-- End Menu Slide-->
+
+    <div class="song-slide"> <!-- Start Song Slide -->
+      <nav> <!-- Start Nav -->
+        <div class="nav-search"> <!-- Start Search-->
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input type="text" name="" placeholder="O que você quer escutar?">
+        </div> <!-- End Search-->
+
+        <div class="nav-itens"> <!-- Start Nav Itens-->
+          
+          <input type="checkbox" name="theme" id="theme">
+          <label for="theme"><i class="fa-solid fa-circle-half-stroke" id="dark"></i></label>
+            <i class="fa-solid fa-radio"></i>
+            <i class="fa-solid fa-bell"></i>
+        </div> <!-- End Nav Itens-->
+      </nav> <!-- End Nav -->
+      
+      <div class="main-popular"> <!-- Start Main Popular Song -->
+        <div class="popular-song"> <!-- Start Popular Song -->
+          <div class="popular-song-menu">
+            <h4>Músicas mais populares do mês</h4>
+            <div class="btn-popular-song">
+              <i id="left-scroll" class="fa-solid fa-arrow-left"></i>
+              <i id="right-scroll" class="fa-solid fa-arrow-right"></i>
+            </div>
+          </div>
+          <div class="pop-content"> <!-- Start Popular Content-->
+            <li class="song-item">
+              <div class="img-play">
+                <img src="images/7.jpg" alt="">
+                <i class="playlist-play fa-solid fa-play" id="7"></i>
+              </div>
+              <h4>Easy Of Me 
+                <br>
+                <div class="subtitle">Adele</div>
+              </h4>
+            </li>
+            <li class="song-item">
+              <div class="img-play">
+                <img src="images/8.jpg" alt="">
+                <i class="playlist-play fa-solid fa-play" id="8"></i>
+              </div>
+              <h4>My Universe
+                <br>
+                <div class="subtitle">ColdPlay & Bts</div>
+              </h4>
+            </li>
+            <li class="song-item">
+              <div class="img-play">
+                <img src="images/9.jpg" alt="">
+                <i class="playlist-play fa-solid fa-play" id="9"></i>
+              </div>
+              <h4>Bad Habits
+                <br>
+                <div class="subtitle">Ed Sheeran</div>
+              </h4>
+            </li>
+            <li class="song-item">
+              <div class="img-play">
+                <img src="images/10.jpg" alt="">
+                <i class="playlist-play fa-solid fa-play" id="10"></i>
+              </div>
+              <h4>Stay
+                <br>
+                <div class="subtitle">The Kid Laroi</div>
+              </h4>
+            </li>
+            <li class="song-item">
+              <div class="img-play">
+                <img src="images/11.jpg" alt="">
+                <i class="playlist-play fa-solid fa-play" id="11"></i>
+              </div>
+              <h4>Shivers
+                <br>
+                <div class="subtitle">Ed Sheeran</div>
+              </h4>
+            </li>
+            <li class="song-item">
+              <div class="img-play">
+                <img src="images/12.jpg" alt="">
+                <i class="playlist-play fa-solid fa-play" id="12"></i>
+              </div>
+              <h4>Abcdefu
+                <br>
+                <div class="subtitle">Gayle</div>
+              </h4>
+            </li>
+            <li class="song-item">
+              <div class="img-play">
+                <img src="images/13.jpg" alt="">
+                <i class="playlist-play fa-solid fa-play" id="13"></i>
+              </div>
+              <h4>Say So
+                <br>
+                <div class="subtitle">Doja Cat</div>
+              </h4>
+            </li>
+            <li class="song-item">
+              <div class="img-play">
+                <img src="images/14.jpg" alt="">
+                <i class="playlist-play fa-solid fa-play" id="14"></i>
+              </div>
+              <h4>Blinding Lights
+                <br>
+                <div class="subtitle">The Weeknd</div>
+              </h4>
+            </li>
+            <li class="song-item">
+              <div class="img-play">
+                <img src="images/15.jpg" alt="">
+                <i class="playlist-play fa-solid fa-play" id="15"></i>
+              </div>
+              <h4>Dance Monkey
+                <br>
+                <div class="subtitle">Tones and I</div>
+              </h4>
+            </li>
+            <li class="song-item">
+              <div class="img-play">
+                <img src="images/16.jpg" alt="">
+                <i class="playlist-play fa-solid fa-play" id="16"></i>
+              </div>
+              <h4>Golden
+                <br>
+                <div class="subtitle">Harry Styles</div>
+              </h4>
+            </li>
+          </div> <!-- End Popular Content-->
+        </div> <!-- End Popular Song -->
+      </div> <!-- End Main Popular Song -->
+
+      <div class="main-popular"> <!-- Start Main Popular Song Nacionais -->
+        <div class="popular-song"> <!-- Start Popular Song -->
+          <div class="popular-song-menu">
+            <h4>Baseados em suas ultimas escolhas</h4>
+            <div class="btn-popular-song">
+              <i id="left-scroll2" class="fa-solid fa-arrow-left"></i>
+              <i id="right-scroll2" class="fa-solid fa-arrow-right"></i>
+            </div>
+          </div>
+          <div class="pop-content dois"> <!-- Start Popular Content-->
+            <li class="song-item">
+              <div class="img-play">
+                <img src="images/17.jpg" alt="">
+                <i class="playlist-play fa-solid fa-play" id="17"></i>
+              </div>
+              <h4>Positions  
+                <br>
+                <div class="subtitle">Ariana Grande</div>
+              </h4>
+            </li>
+            <li class="song-item">
+              <div class="img-play">
+                <img src="images/18.jpg" alt="">
+                <i class="playlist-play fa-solid fa-play" id="18"></i>
+              </div>
+              <h4>Memories 
+                <br>
+                <div class="subtitle">Maroon 5</div>
+              </h4>
+            </li>
+            <li class="song-item">
+              <div class="img-play">
+                <img src="images/19.jpg" alt="">
+                <i class="playlist-play fa-solid fa-play" id="19"></i>
+              </div>
+              <h4>Medicine
+                <br>
+                <div class="subtitle">James Arthur</div>
+              </h4>
+            </li>
+            <li class="song-item">
+              <div class="img-play">
+                <img src="images/20.jpg" alt="">
+                <i class="playlist-play fa-solid fa-play" id="20"></i>
+              </div>
+              <h4>Physical
+                <br>
+                <div class="subtitle">Dua Lipa</div>
+              </h4>
+            </li>
+            <li class="song-item">
+              <div class="img-play">
+                <img src="images/21.jpg" alt="">
+                <i class="playlist-play fa-solid fa-play" id="21"></i>
+              </div>
+              <h4>WAP
+                <br>
+                <div class="subtitle">Cardi B</div>
+              </h4>
+            </li>
+            <li class="song-item">
+              <div class="img-play">
+                <img src="images/22.jpg" alt="">
+                <i class="playlist-play fa-solid fa-play" id="22"></i>
+              </div>
+              <h4>Blind
+                <br>
+                <div class="subtitle">Jordyn Jones</div>
+              </h4>
+            </li>
+            <li class="song-item">
+              <div class="img-play">
+                <img src="images/23.jpg" alt="">
+                <i class="playlist-play fa-solid fa-play" id="23"></i>
+              </div>
+              <h4>Bad Guy
+                <br>
+                <div class="subtitle">Billie Eilish</div>
+              </h4>
+            </li>
+            <li class="song-item">
+              <div class="img-play">
+                <img src="images/24.jpg" alt="">
+                <i class="playlist-play fa-solid fa-play" id="24"></i>
+              </div>
+              <h4>Bad Liar
+                <br>
+                <div class="subtitle">Imagine Dragons</div>
+              </h4>
+            </li>
+            <li class="song-item">
+              <div class="img-play">
+                <img src="images/25.jpg" alt="">
+                <i class="playlist-play fa-solid fa-play" id="25"></i>
+              </div>
+              <h4>7 Rings
+                <br>
+                <div class="subtitle">Ariana Grande</div>
+              </h4>
+            </li>
+            <li class="song-item">
+              <div class="img-play">
+                <img src="images/26.jpg" alt="">
+                <i class="playlist-play fa-solid fa-play" id="26"></i>
+              </div>
+              <h4>Nervous
+                <br>
+                <div class="subtitle">Shawn Mendes</div>
+              </h4>
+            </li>
+          </div> <!-- End Popular Content-->
+        </div> <!-- End Popular Song -->
+      </div> <!-- End Main Popular Song -->
+
+
+      <div class="popular-artist"> <!-- Start Popular Artist -->
+        <div class="popular-song-menu">
+          <h4>Artistas Populares</h4>
+          <div class="btn-popular-song">
+            <i id="left-scrolls" class="fa-solid fa-arrow-left"></i>
+            <i id="right-scrolls" class="fa-solid fa-arrow-right"></i>
+          </div>
+        </div>
+        <div class="item"> 
+          <li>
+            <img src="images/icon-ed.jpg" alt="Ed sheeran">
+          </li>
+          <li>
+            <img src="images/icon-ariana.jpg" alt="Ariana Grande">
+          </li>
+          <li>
+            <img src="images/icon-drake.jpg" alt="Drake">
+          </li>
+          <li>
+            <img src="images/icon-justien.jpg" alt="Justin Bieber">
+          </li>
+          <li>
+            <img src="images/icon-billie.jpg" alt="Billie Eilish">
+          </li>
+          <li>
+            <img src="images/icon-eminem.jpg" alt="Eminem">
+          </li>
+          <li>
+            <img src="images/icon-rihanna.jpg" alt="Rihanna">
+          </li>
+          <li>
+            <img src="images/icon-taylor.jpg" alt="Taylor Swift">
+          </li>
+          <li>
+            <img src="images/icon-week.jpg" alt="The Weeknd">
+          </li>
+          <li>
+            <img src="images/icon-shawn.jpg" alt="Shawn Mendes">
+          </li>
+          <li>
+            <img src="images/icon-malone.jpg" alt="Post Malone">
+          </li>
+          <li>
+            <img src="images/icon-bruno.jpg" alt="Bruno Mars">
+          </li>
+          <li>
+            <img src="images/icon-marsh.jpg" alt="Marshmello">
+          </li>
+          <li>
+            <img src="images/icon-selena.jpg" alt="Selena Gomez">
+          </li>
+        </div>
+      </div> <!-- End Popular Artist -->
+    </div>  <!-- End Song Slide -->
+
+
+    <div class="master-play">
+        <img src="images/1.jpg" alt="" id="poster_master_play">
+        <h4 id="title">I Love You <br>
+          <div class="subtitle">Billie Eilish</div>
+        </h4>
+
+        <div class="icon">
+          <i class="fa-solid fa-caret-left" id="back"></i>
+          <i class="fa-solid fa-play" id="masterPlay"></i>
+          <i class="fa-solid fa-caret-right" id="next"></i>
+        </div>
+        <span id="current-start">0:00</span>
+        <div class="bar">
+          <input type="range" id="seek" min="0" value="0" max="100">
+          <div class="bar2" id="bar2"></div>
+          <div class="dot"></div>
+        </div>
+        <span id="current-end">0:00</span>
+
+        <div class="vol">
+          <i class="fa-solid fa-music" id="vol-icon"></i>
+          <input type="range" id="vol" min="0" value="0" max="100">
+          <div class="vol-bar"></div>
+          <div class="dot" id="vol-dot"></div>
+        </div>
+    </div>
+  </header>
+
+  <script src="dark.js"></script>
+</body>
+</html>
